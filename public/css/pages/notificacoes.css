@@ -1,0 +1,92 @@
+/**
+ * Auto Portas - Notificações
+ * Estilos da página de notificações
+ */
+
+.notificacoes-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.notificacao-card {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    text-decoration: none;
+    color: inherit;
+    transition: all var(--transition-fast);
+}
+
+.notificacao-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateX(4px);
+}
+
+.notificacao-card .notificacao-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.notificacao-danger .notificacao-icon {
+    background: var(--danger-bg);
+    color: var(--danger);
+}
+
+.notificacao-warning .notificacao-icon {
+    background: var(--warning-bg);
+    color: var(--warning);
+}
+
+.notificacao-info .notificacao-icon {
+    background: var(--info-bg);
+    color: var(--info);
+}
+
+.notificacao-success .notificacao-icon {
+    background: var(--success-bg);
+    color: var(--success);
+}
+
+.notificacao-content {
+    flex: 1;
+}
+
+.notificacao-content h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.notificacao-content p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.notificacao-arrow {
+    color: var(--text-secondary);
+}
+
+.notificacao-danger {
+    border-left: 4px solid var(--danger);
+}
+
+.notificacao-warning {
+    border-left: 4px solid var(--warning);
+}
+
+.notificacao-info {
+    border-left: 4px solid var(--info);
+}
+

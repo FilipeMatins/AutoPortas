@@ -1,0 +1,49 @@
+/**
+ * Auto Portas - Sistema de Gestão
+ * Arquivo principal que importa todos os estilos
+ * 
+ * ESTRUTURA:
+ * ├── base/         - Variáveis, reset e utilitários
+ * ├── layout/       - Sidebar, header e grid
+ * ├── components/   - Botões, cards, forms, etc.
+ * └── pages/        - Estilos específicos de páginas
+ */
+
+/* ========================================
+   BASE
+   ======================================== */
+@import url('base/variables.css');
+@import url('base/reset.css');
+@import url('base/utilities.css');
+
+/* ========================================
+   LAYOUT
+   ======================================== */
+@import url('layout/sidebar.css');
+@import url('layout/header.css');
+
+/* ========================================
+   COMPONENTES
+   ======================================== */
+@import url('components/buttons.css');
+@import url('components/cards.css');
+@import url('components/forms.css');
+@import url('components/tables.css');
+@import url('components/alerts.css');
+@import url('components/badges.css');
+@import url('components/pagination.css');
+@import url('components/notifications.css');
+@import url('components/empty-state.css');
+@import url('components/filters.css');
+@import url('components/client-search.css');
+
+/* ========================================
+   PÁGINAS
+   ======================================== */
+@import url('pages/dashboard.css');
+@import url('pages/clientes.css');
+@import url('pages/orcamentos.css');
+@import url('pages/pecas.css');
+@import url('pages/contas.css');
+@import url('pages/notificacoes.css');
+

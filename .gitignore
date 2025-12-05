@@ -1,0 +1,27 @@
+# Ambiente
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Cache
+cache/
+tmp/
+
+# Vendor (se usar composer)
+vendor/
+
+# Node (se usar npm)
+node_modules/
+

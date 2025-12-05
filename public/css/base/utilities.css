@@ -1,0 +1,30 @@
+/**
+ * Auto Portas - Classes Utilitárias
+ * Classes auxiliares de uso geral
+ */
+
+/* Margens */
+.mb-4 { margin-bottom: var(--spacing-lg); }
+.mt-2 { margin-top: 8px; }
+
+/* Textos */
+.text-muted { color: var(--text-secondary); }
+.text-primary { color: var(--primary); }
+.text-success { color: var(--success); }
+.text-danger { color: var(--danger); }
+.text-warning { color: var(--warning); }
+
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+/* Display */
+.inline { display: inline; }
+
+/* Código */
+code {
+    background: var(--gray-100);
+    padding: 2px 6px;
+    border-radius: var(--radius-sm);
+    font-size: 0.8125rem;
+}
+

@@ -1,0 +1,90 @@
+/**
+ * Auto Portas - Clientes
+ * Estilos específicos da página de clientes
+ */
+
+/* Detail Page */
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.detail-grid .full-width {
+    grid-column: span 2;
+}
+
+.detail-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--radius-full);
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 auto var(--spacing-lg);
+}
+
+.detail-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-item dt {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.detail-item dd {
+    font-weight: 500;
+}
+
+.detail-item.total {
+    padding-top: var(--spacing-md);
+    border-top: 2px solid var(--border-color);
+    border-bottom: none;
+}
+
+.meta-info {
+    display: flex;
+    gap: var(--spacing-xl);
+    color: var(--text-secondary);
+    font-size: 0.8125rem;
+}
+
+.meta-info span {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .detail-grid .full-width {
+        grid-column: span 1;
+    }
+}
+

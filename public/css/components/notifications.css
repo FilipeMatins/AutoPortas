@@ -1,0 +1,230 @@
+/**
+ * Auto Portas - Notificações
+ * Estilos do dropdown e itens de notificação
+ */
+
+.notification-dropdown {
+    position: relative;
+}
+
+.notification-btn {
+    position: relative;
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+}
+
+.notification-btn:hover {
+    background: var(--gray-100);
+    color: var(--text-primary);
+}
+
+.notification-badge {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: var(--danger);
+    color: #fff;
+    font-size: 0.625rem;
+    font-weight: 600;
+    padding: 2px 5px;
+    border-radius: var(--radius-full);
+    min-width: 18px;
+    text-align: center;
+}
+
+.notification-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 360px;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-color);
+    z-index: 1000;
+    display: none;
+    margin-top: 8px;
+}
+
+.notification-menu.show {
+    display: block;
+    animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.notification-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.notification-header h4 {
+    font-size: 0.9375rem;
+    font-weight: 600;
+}
+
+.notification-body {
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+.notification-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-lg);
+    text-decoration: none;
+    color: inherit;
+    border-left: 3px solid transparent;
+    transition: all var(--transition-fast);
+}
+
+.notification-item:hover {
+    background: var(--gray-50);
+}
+
+.notification-item.notification-danger {
+    border-left-color: var(--danger);
+}
+
+.notification-item.notification-warning {
+    border-left-color: var(--warning);
+}
+
+.notification-item.notification-info {
+    border-left-color: var(--info);
+}
+
+.notification-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.notification-danger .notification-icon {
+    background: var(--danger-bg);
+    color: var(--danger);
+}
+
+.notification-warning .notification-icon {
+    background: var(--warning-bg);
+    color: var(--warning);
+}
+
+.notification-info .notification-icon {
+    background: var(--info-bg);
+    color: var(--info);
+}
+
+.notification-info-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.notification-item strong {
+    display: block;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.notification-item span {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notification-empty {
+    padding: var(--spacing-xl);
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.notification-empty i {
+    font-size: 2rem;
+    color: var(--success);
+    margin-bottom: var(--spacing-sm);
+}
+
+.notification-footer {
+    padding: var(--spacing-md);
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.notification-footer a {
+    font-size: 0.8125rem;
+    font-weight: 500;
+}
+
+/* Ações de notificação */
+.notification-item {
+    position: relative;
+}
+
+.notification-link {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+}
+
+.notification-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.notification-actions {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+}
+
+.notification-item:hover .notification-actions {
+    opacity: 1;
+}
+
+.btn-notif-action {
+    background: none;
+    border: none;
+    padding: 4px 6px;
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.btn-notif-action:hover {
+    background: var(--gray-200);
+    color: var(--danger);
+}
+
+/* Animação de saída */
+@keyframes fadeOut {
+    from { opacity: 1; transform: translateX(0); }
+    to { opacity: 0; transform: translateX(20px); }
+}
+

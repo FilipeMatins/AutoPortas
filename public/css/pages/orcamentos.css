@@ -1,0 +1,338 @@
+/**
+ * Auto Portas - Orçamentos
+ * Estilos específicos da página de orçamentos
+ */
+
+/* Status Banner */
+.status-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.status-banner.status-pendente {
+    background: var(--warning-bg);
+}
+
+.status-banner.status-aprovado,
+.status-banner.status-concluido {
+    background: var(--success-bg);
+}
+
+.status-banner.status-rejeitado {
+    background: var(--danger-bg);
+}
+
+.status-banner.status-em_execucao {
+    background: var(--info-bg);
+}
+
+.status-banner.status-vencido {
+    background: var(--danger-bg);
+}
+
+.status-banner.status-parcial {
+    background: var(--warning-bg);
+}
+
+.status-banner.status-pago {
+    background: var(--success-bg);
+}
+
+.status-info {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.status-label {
+    font-weight: 500;
+}
+
+.status-value {
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.status-form select {
+    min-width: 150px;
+}
+
+.status-alert {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #dc2626;
+    font-weight: 500;
+}
+
+.payment-info {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--border-color);
+    color: var(--text-secondary);
+}
+
+/* Serviços no form de orçamento */
+.servicos-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.servico-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: var(--gray-50);
+    border-radius: var(--radius-md);
+}
+
+.servico-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.servico-preco {
+    font-size: 0.8125rem;
+    color: var(--text-secondary);
+}
+
+.servico-inputs {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-left: auto;
+}
+
+.servico-inputs .form-group {
+    margin-bottom: 0;
+}
+
+.servico-inputs .form-control {
+    width: 100px;
+    text-align: center;
+}
+
+/* Total display */
+.total-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md);
+    background: var(--primary-bg);
+    border-radius: var(--radius-md);
+    margin-top: var(--spacing-md);
+}
+
+.total-display span {
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.total-display strong {
+    font-size: 1.25rem;
+    color: var(--primary);
+}
+
+/* Cobrança integrada */
+.cobranca-card {
+    margin-bottom: var(--spacing-lg);
+}
+
+.cobranca-status {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+.cobranca-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.cobranca-icon.pago {
+    background: var(--success-bg);
+    color: var(--success);
+}
+
+.cobranca-icon.parcial {
+    background: var(--warning-bg);
+    color: var(--warning);
+}
+
+.cobranca-icon.vencido {
+    background: var(--danger-bg);
+    color: var(--danger);
+}
+
+.cobranca-icon.pendente {
+    background: var(--info-bg);
+    color: var(--info);
+}
+
+.cobranca-info {
+    flex: 1;
+}
+
+.cobranca-info h4 {
+    font-size: 1.125rem;
+    margin-bottom: 4px;
+}
+
+.cobranca-info p {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.cobranca-grid {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr;
+    gap: var(--spacing-lg);
+    align-items: start;
+}
+
+.cobranca-grid .form-group {
+    margin-bottom: 0;
+}
+
+.cobranca-valor-total {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: var(--primary-bg);
+    border-radius: var(--radius-md);
+}
+
+.cobranca-valor-total span {
+    font-size: 0.75rem;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.cobranca-valor-total strong {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.cobranca-actions {
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Peças no Orçamento */
+.peca-add-container {
+    margin-bottom: var(--spacing-lg);
+}
+
+.pecas-selecionadas {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.peca-item,
+.peca-item-existente {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: var(--gray-50);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+}
+
+.peca-item-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.peca-item-info strong {
+    display: block;
+    font-size: 0.9375rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.peca-item-info small {
+    color: var(--text-secondary);
+}
+
+.peca-item-inputs {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: flex-end;
+}
+
+.peca-item-inputs .form-group {
+    margin-bottom: 0;
+}
+
+.peca-item-inputs .form-group label {
+    font-size: 0.75rem;
+    margin-bottom: 2px;
+}
+
+.peca-item-inputs input {
+    width: 80px;
+}
+
+.peca-item-inputs .peca-valor {
+    width: 110px;
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+    .cobranca-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .cobranca-valor-total {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .peca-item {
+        flex-wrap: wrap;
+    }
+    
+    .peca-item-info {
+        flex: 1 1 100%;
+    }
+    
+    .peca-item-inputs {
+        flex: 1;
+    }
+}
+
+@media (max-width: 576px) {
+    .cobranca-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cobranca-valor-total {
+        grid-column: span 1;
+    }
+    
+    .cobranca-status {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+

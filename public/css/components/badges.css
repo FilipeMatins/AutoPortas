@@ -1,0 +1,39 @@
+/**
+ * Auto Portas - Badges
+ * Estilos de etiquetas e status
+ */
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: var(--radius-full);
+}
+
+.badge-success {
+    background: var(--success-bg);
+    color: #065f46;
+}
+
+.badge-warning {
+    background: var(--warning-bg);
+    color: #92400e;
+}
+
+.badge-danger {
+    background: var(--danger-bg);
+    color: #991b1b;
+}
+
+.badge-info {
+    background: var(--info-bg);
+    color: #1e40af;
+}
+
+.badge-secondary {
+    background: var(--gray-200);
+    color: var(--gray-700);
+}
+

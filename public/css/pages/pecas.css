@@ -1,0 +1,66 @@
+/**
+ * Auto Portas - Peças e Marcas
+ * Estilos específicos da página de peças
+ */
+
+/* Grid de marcas */
+.marcas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.marca-card {
+    background: var(--gray-50);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+    transition: all var(--transition-fast);
+}
+
+.marca-card:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.marca-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.marca-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: var(--primary-bg);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+.marca-info h4 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.marca-stats {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.marca-desc {
+    color: var(--text-secondary);
+    font-size: 0.8125rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.marca-actions {
+    display: flex;
+    gap: var(--spacing-sm);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--border-color);
+}
+

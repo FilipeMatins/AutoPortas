@@ -1,0 +1,119 @@
+/**
+ * Auto Portas - Tabelas
+ * Tema: Moderno & Robusto
+ */
+
+.table-responsive {
+    overflow-x: auto;
+    border-radius: var(--radius-md);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: var(--spacing-md) var(--spacing-lg);
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.table th {
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    color: var(--text-secondary);
+    background: var(--gray-100);
+    border-bottom: 2px solid var(--border-color);
+}
+
+.table th:first-child {
+    border-radius: var(--radius-md) 0 0 0;
+}
+
+.table th:last-child {
+    border-radius: 0 var(--radius-md) 0 0;
+}
+
+.table tbody tr {
+    transition: all var(--transition-fast);
+}
+
+.table tbody tr:hover {
+    background: var(--gray-50);
+}
+
+.table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.table .text-right {
+    text-align: right;
+}
+
+.table .text-center {
+    text-align: center;
+}
+
+.table-user {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.table-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-full);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    flex-shrink: 0;
+}
+
+.table-actions {
+    display: flex;
+    gap: var(--spacing-xs);
+}
+
+/* Row com destaque de erro */
+.row-danger {
+    background: rgba(239, 68, 68, 0.08) !important;
+    border-left: 3px solid var(--danger);
+}
+
+.row-danger:hover {
+    background: rgba(239, 68, 68, 0.12) !important;
+}
+
+/* Row de sucesso */
+.row-success {
+    background: rgba(16, 185, 129, 0.08) !important;
+}
+
+/* Inline forms */
+.inline {
+    display: inline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .table th,
+    .table td {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: 0.8125rem;
+    }
+    
+    .table-avatar {
+        width: 32px;
+        height: 32px;
+        font-size: 0.8125rem;
+    }
+}
